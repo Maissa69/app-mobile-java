@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="MainActivity"
+    android:padding="10dp"
+    android:background="@drawable/form">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="40dp"
+        app:cardBackgroundColor="@color/teal_700"
+        app:cardElevation="20dp"
+        android:background="@drawable/circle">
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="40dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="30dp"
+        android:background="@drawable/custom_edittext">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/Nametext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:text="Please inter information"
+                android:layout_marginTop="24dp"/>
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/Nametext"
+                android:hint="Name"/>
+            <EditText
+                android:id="@+id/Prenom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/Name"
+                android:hint="Familyname"/>
+            <EditText
+                android:id="@+id/adress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/Prenom"
+                android:hint="Adress"/>
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/adress"
+                android:hint="email"/>
+
+            <EditText
+                android:id="@+id/numtel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/email"
+                android:hint="Phone number"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/numtel"
+                android:layout_marginTop="30dp"
+                android:text="Date of birth"
+                android:textSize="24dp"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/datePicker"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="JAN 01 2024"
+                android:textSize="24dp"
+                android:layout_below="@id/date"
+                android:textColor="@color/black"
+                style="?android:spinnerStyle"
+                android:layout_marginTop="10dp"
+                android:onClick="openDatePicker"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/loginButton"
+                android:text="Save"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/teal_200"
+                android:layout_below="@id/datePicker"
+                app:cornerRadius="20dp"/>
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</LinearLayout>
+
+
+
